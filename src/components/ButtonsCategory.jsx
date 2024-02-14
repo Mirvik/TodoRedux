@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { filterBy, filters, clearAllTodos } from '../store/todoSlicer';
 import { useDispatch } from 'react-redux';
 

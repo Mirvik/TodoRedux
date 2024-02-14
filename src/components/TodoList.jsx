@@ -1,4 +1,3 @@
-import React from 'react';
 import TodoItem from './TodoItem';
 import { useSelector } from 'react-redux';
 import { filters } from '../store/todoSlicer';
@@ -26,7 +25,11 @@ export default function TodoList() {
         <>
             {filteredTodos().map( todo => (
                 <li key={todo.id}>
-                    <TodoItem id={todo.id} {...todo} />
+                    <TodoItem 
+                        id={todo.id}
+                        text={todo.text} 
+                        completed={todo.completed}
+                    />
                     <hr />
                 </li>
             ))}

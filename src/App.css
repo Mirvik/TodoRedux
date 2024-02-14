@@ -12,16 +12,19 @@
 
 input {
   height: 50px;
-  font-size: 20px;
   border: 2px solid white;
   border-radius: 5px;
+
+  font-size: 18px;
 
   color: white;
   background-color: transparent;
 
   transition: .4s;
 }
-
+.card .small_button {
+  margin-top: 10px;
+}
 .small_button {
   font-size: 17px;
 
@@ -38,7 +41,7 @@ input {
 }
 
 .small_button:active {
-  color: transparents;
+  color: transparent;
   background-color: transparent;
 }
 
@@ -49,7 +52,6 @@ input {
 }
 .btn {
   padding: 5px 5px;
-  font-size: 18px;
   border: 1px solid white;
   border-radius: 4px;
 
@@ -60,7 +62,7 @@ input {
   transition: .4s;
 }
 .btn:hover {
-  font-size: 23px;
+  font-size: 17px;
 }
 .btn:active {
   background-color: #230672;
@@ -68,7 +70,6 @@ input {
 .status {
   padding: auto;
   margin-right: 10px;
-  font-size: 18px;
   color: white;
   background-color: transparent;
   border: none;
@@ -80,7 +81,7 @@ input {
   border: 1px solid white;
   border-radius: 4px;
 
-  font-size: 23px;
+  font-size: 17px;
 }
 .status:active {
   color: transparent;
@@ -110,4 +111,26 @@ input {
   border-radius: 4px;
 
   font-size: 23px;
+}
+
+@media (min-width: 600px){
+  .status {
+    font-size: 20px;
+  }
+  .status:hover {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+  .btn:hover {
+    font-size: 22px;
+  }
+  input {
+    font-size: 20px;
+  }
+  input:hover {
+    font-size: 21px;
+  }
 }
