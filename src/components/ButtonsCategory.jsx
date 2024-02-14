@@ -18,7 +18,7 @@ export default function ButtonsCategory() {
 
     return (
         <div className="buttons">
-            <button onClick={(e) => {addStyle(e); dispatch(filterBy(filters.ALL))}} ref={b1} className='status' type='submit'>All</button>
+            <button onClick={(e) => {addStyle(e); dispatch(filterBy(filters.ALL))}} ref={b1} className='status select' type='submit'>All</button>
             <button onClick={(e) => {addStyle(e); dispatch(filterBy(filters.NOT_COMPLETED))}} ref={b2} className='status' type='submit'>Pending</button>
             <button onClick={(e) => {addStyle(e); dispatch(filterBy(filters.COMPLETED))}} ref={b3} className='status' type='submit'>Completed</button>
             <button onClick={() => {dispatch(clearAllTodos())}} className='btn' type='submit'>Clear all</button>
